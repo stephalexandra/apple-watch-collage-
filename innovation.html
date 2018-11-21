@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Collage </title>
+
+	<style type="text/css">
+		body {
+			background: black;
+
+		}
+
+			.container {
+				width: 600px;
+				height: 600px;
+				background: black;
+				min-height: 100vh;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 2fr 1fr 1fr;
+				grid-template-areas: 
+				"p1 p2"
+				"p3 p4"
+				"p3 p5";
+				grid-gap: 10px;
+			}
+
+			.item {
+				background: black;
+				min-height: 100px;
+				min-width: 100px;
+			}
+
+			#photo1 {
+				grid-area: p1;
+				background: url(https://img.purch.com/w/600/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9NL0YvNDgxNjIzL29yaWdpbmFsL2FwcGxlLXdhdGNoLXBheS5qcGc=);
+				background-size: cover;
+				background-position: center;
+			
+			}
+
+			#photo2 {
+				grid-area: p2;
+				background: url(https://ksassets.timeincuk.net/wp/uploads/sites/54/2015/12/apple-watch-3-2-920x494.png);
+				background-size: cover;
+				background-position: center;
+
+			}
+
+			#photo3 {
+				grid-area: p3;
+				background: url(http://cdn.iphonehacks.com/wp-content/uploads/2015/05/Apple-Watch.jpg);
+				background-size: cover;
+				background-position: center;
+			}
+
+			#photo4 {
+				grid-area: p4;
+				background: url(https://assets.pcmag.com/media/images/459685-apple-watch.jpg?thumb=y&width=810&height=456);
+				background-size: cover;
+				background-position: center;
+			}
+
+			#photo5 {
+				grid-area: p5;
+				background: url(https://media.idownloadblog.com/wp-content/uploads/2016/06/watchOS-3-Dock-Apple-Watch-screenshot-001.png);
+				background-size: cover;
+				background-position: center;
+			}
+			
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item"	id="photo1">
+		</div>
+		<div class="item"	id="photo2">
+		</div>
+		<div class="item"	id="photo3">
+		</div>
+		<div class="item"	id="photo4">
+		</div>
+		<div class="item"	id="photo5">
+		</div>
+	</div>
+
+</body>
+</html>
